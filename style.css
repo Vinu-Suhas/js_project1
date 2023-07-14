@@ -1,5 +1,8 @@
 body{
     background-color: #3D087B;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
 }
 /* 
 .container1{
@@ -27,7 +30,7 @@ body{
 
 .box2 span{
     color: #3D087B;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .box3{
@@ -40,6 +43,7 @@ body{
     height: 50px;
     padding: 15px;
     padding-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 .box4{
     padding-top: 5px;
@@ -65,4 +69,89 @@ body{
     width: fit-content;
     color: #F25CFE;
     background-color: #9140B5 ;
+}
+p.dash{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0px;
+    padding-left: 48px;
+    font-size: 25px;
+    color: #C2C2C2;
+    font-weight: bold;
+}
+.hour_box{
+            background-image: url(./timeline.svg); 
+            height: 80px; 
+            margin-top: 10px;
+            width: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 4px;
+            padding-right: 4px;
+}
+.box6{
+    
+    /* z-index: 2; */
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    /* align-items: center; */
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+/* .box6_1{
+    position: absolute;
+    z-index: -2;
+} */
+.box6 span{
+    color: #3D087B;
+}
+.box7{
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    height: 6vh;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.container2{
+    margin-left: 10px;
+}
+
+.select_id_menu{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Manrope';
+    margin: 0px;
+}
+/* .select_id_menu */
+.box2 select{
+    font-family: 'Manrope';
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+    /* padding: 0.5em 0; */
+    /* min-width: 15ch; */
+    
+  overflow: hidden;
+}
+
+
+p.time{
+    color: #8A11BF;
+                 padding-left: 10px;
+                font-weight: 600;
+                font-size: 20px;
+                font-family: 'Manrope', sans-serif;margin-bottom: 0px;
+}
+p.time_unit{
+    color: #8A11BF; margin: 5px;   
+    font-family: 'Manrope', sans-serif;
+    padding-bottom: 5px;
 }
