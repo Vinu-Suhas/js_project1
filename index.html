@@ -8,6 +8,10 @@
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 </head>
 <body>
+    <script src="./scripts.js">
+
+// let instance_date=new Date()
+    </script>
     <div class="container1">
         <div class="box1">
             <img src="./clock_logo.png" alt="">
@@ -15,7 +19,7 @@
         <div class="box2">
             <div class="select_id_menu">
                 <img src="./wake_up.svg">
-                <span>Set wake up time</span>
+     f           <span>Set wake up time</span>
                 <select name="wake_up">
                     <option value="0">12 AM - 1 AM</option>
                     <option value="1">1 AM - 2 AM</option>
@@ -167,21 +171,21 @@
             font-weight: bold;
             margin-right:50px; ">TIME</span>
             <div class="hour_box">
-                <p  class="time">10</p>
+                <p  class="time" id="time_hours">10</p>
                 <p class="time_unit">hours</p>
             </div> 
             <p style="font-size: 30px;">:</p>
             <div class="hour_box">
-                <p  class="time">00</p>
+                <p  class="time" id="time_mins">00</p>
                 <p class="time_unit">mins</p>
             </div>
             <p style="font-size: 30px;">:</p>
             <div class="hour_box">
-                <p  class="time">01</p>
-                <p class="time_unit">secs</p>
+                <p  class="time" id="time_sec">01</p>
+                <p class="time_unit" >secs</p>
             </div>
             <div class="hour_box" style="background-image: url(./AM_svg.svg);">
-            <p style="text-align: center; color: white; font-size: x-large; font-family: 'Manrope', sans-serif;">AM</p></div>
+            <p style="text-align: center; color: white; font-size: x-large; font-family: 'Manrope', sans-serif;" id="meridian_switch">AM</p></div>
             <!-- <img src="./timeline.svg"> -->
             <!-- <p>10</p> -->
 
