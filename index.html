@@ -19,8 +19,8 @@
         <div class="box2">
             <div class="select_id_menu">
                 <img src="./wake_up.svg">
-                <span>Set wake up time</span>
-                <select name="wake_up">
+                <span><label for="wake_up_menu"> wake up time</label></span>
+                <select name="wake_up" id="wake_up_menu">
                     <option value="0">12 AM - 1 AM</option>
                     <option value="1">1 AM - 2 AM</option>
                     <option value="2">2 AM - 3 AM</option>
@@ -34,7 +34,7 @@
                     <option value="10" selected="">10 AM - 11 AM</option>
                     <option value="11">11 AM - 12 PM</option>
                     <option value="12">12 PM - 1 PM</option>
-                    <option value="13">2 PM - 2 PM</option>
+                    <option value="13">1 PM - 2 PM</option>
                     <option value="14">2 PM - 3 PM</option>
                     <option value="15">3 PM - 4 PM</option>
                     <option value="16">4 PM - 5 PM</option>
@@ -50,8 +50,8 @@
             <p class="dash">|</p><br>
             <div class="select_id_menu">
                 <img src="./lunch_time.svg">
-                <span>Set lunch time</span>
-                <select name="lunch">
+                <span><label for="lunch_menu">Set lunch time</label></span>
+                <select name="lunch" id="lunch_menu">
                     <option value="0">12 AM - 1 AM</option>
                     <option value="1">1 AM - 2 AM</option>
                     <option value="2">2 AM - 3 AM</option>
@@ -65,7 +65,7 @@
                     <option value="10" >10 AM - 11 AM</option>
                     <option value="11">11 AM - 12 PM</option>
                     <option value="12" selected="">12 PM - 1 PM</option>
-                    <option value="13">2 PM - 2 PM</option>
+                    <option value="13">1 PM - 2 PM</option>
                     <option value="14">2 PM - 3 PM</option>
                     <option value="15">3 PM - 4 PM</option>
                     <option value="16">4 PM - 5 PM</option>
@@ -82,7 +82,7 @@
             <div class="select_id_menu">
                 <img src="./nap_time.svg">
                 <span>Set nap time</span>
-                <select name="nap_time">
+                <select name="nap_time" id="nap_menu">
                     <option value="0">12 AM - 1 AM</option>
                     <option value="1">1 AM - 2 AM</option>
                     <option value="2">2 AM - 3 AM</option>
@@ -96,7 +96,7 @@
                     <option value="10" >10 AM - 11 AM</option>
                     <option value="11">11 AM - 12 PM</option>
                     <option value="12">12 PM - 1 PM</option>
-                    <option value="13">2 PM - 2 PM</option>
+                    <option value="13">1 PM - 2 PM</option>
                     <option value="14">2 PM - 3 PM</option>
                     <option value="15">3 PM - 4 PM</option>
                     <option value="16"  selected="">4 PM - 5 PM</option>
@@ -112,8 +112,8 @@
             <p class="dash">|</p><br>
             <div class="select_id_menu">
                 <img src="./nap_time.svg">
-                <span>Set night time</span>
-                <select name="night">
+                <span><label for="night_menu">Set night time </label></span>
+                <select name="night" id="night_menu">
                     <option value="0">12 AM - 1 AM</option>
                     <option value="1">1 AM - 2 AM</option>
                     <option value="2">2 AM - 3 AM</option>
@@ -127,7 +127,7 @@
                     <option value="10" >10 AM - 11 AM</option>
                     <option value="11">11 AM - 12 PM</option>
                     <option value="12">12 PM - 1 PM</option>
-                    <option value="13">2 PM - 2 PM</option>
+                    <option value="13">1 PM - 2 PM</option>
                     <option value="14">2 PM - 3 PM</option>
                     <option value="15">3 PM - 4 PM</option>
                     <option value="16"  >4 PM - 5 PM</option>
@@ -143,19 +143,19 @@
         </div>
     
         <div class="box3">
-            <span style="color: white;font-weight: bolder;  font-size: 25px; text-shadow: 0px 1px, 1px 0px, 1px 0px;">
+            <span style="color: white;font-weight: bolder;  font-size: 25px; text-shadow: 0px 1px, 1px 0px, 1px 0px;" id="box3_greeting">
                 GOOD MORNING!! WAKE UP !!
             </span>
         </div>
         <div class="combined_container" style="display:inline-block; justify-content:flex-start;">
-            <div class="box4">
+            <button class="box4" id="set_alarm"onclick="set_alarm_button()">
                 Set Alarm
-            </div>
+            </button>
             <div class="box5">
-                Wake Up Time : 10AM - 11AM <br> 
-                Lunch Time : 12PM - 1PM <br>
-                Nap Time : 4PM - 5PM <br>
-                Night Time : 8PM-9AM
+                Wake Up Time : <span id="wake_up_time_display">10AM - 11AM </span><br> 
+                Lunch Time : <span id="lunch_time_display">12PM - 1PM </span><br>
+                Nap Time : <span id="nap_time_display">4PM - 5PM</span> <br>
+                Night Time : <span id="night_time_display">8PM-9AM</span>
             </div>
         </div>
     </div>
@@ -194,12 +194,12 @@
         <div class="box7">
             <span style="color: #8E53F0;font-weight: bolder;  font-size: 25px; 
             text-shadow: 0px 1px, 1px 0px, 0px 0px;
-             font-family: 'Bauhaus Modern', sans-serif;">
+             font-family: 'Bauhaus Modern', sans-serif;" id="box7_greeting">
                 GRAB SOME HEALTHY BREAKFAST!!!
             </span>
         </div>
         <div class="box8">
-            <img src="./Component 30 – 1.svg" alt="">
+            <img src="./Component 30 – 1.svg" alt="" id="image">
         </div>
     </div>
 </body>

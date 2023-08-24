@@ -3,6 +3,7 @@ body{
     display: flex;
     /* justify-content: space-around; */
     justify-content: center;
+    margin-top: 20px;
 }
 /* 
 .container1{
@@ -170,3 +171,12 @@ p.time_unit{
     font-family: 'Manrope', sans-serif;
     padding-bottom: 5px;
 }
+
+ @media screen and (min-width: 250px) and (max-width: 500px){
+    body{
+        flex-direction: column;
+    }
+    .container2{
+        margin-top: 20px;
+    }
+ }
