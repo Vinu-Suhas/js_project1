@@ -56,6 +56,11 @@ function set_alarm_button(){
         document.getElementById('box7_greeting').innerText="LET'S HAVE SOME LUNCH !!"
 
     }
+    else if(wake_up_id.value ==hours){
+        document.getElementById('box3_greeting').innerText="GOOD MORNING!! WAKE UP !! "
+        document.getElementById('image').src="./lunch_greeting.png"
+        document.getElementById('box7_greeting').innerText="LET'S HAVE SOME LUNCH !!"
+    }
 }
 
 var button_new=document.getElementById("set_alarm")
@@ -63,6 +68,6 @@ var button_new=document.getElementById("set_alarm")
 button_new.addEventListener("mouseover",function(){
     this.innerText="Party Time"
 })
-button_new.addEventListener("mousehout",function(){
+button_new.addEventListener("mouseout",function(){
     this.innerText="Set Alarm"
 })

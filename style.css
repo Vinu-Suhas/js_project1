@@ -175,6 +175,7 @@ p.time_unit{
  @media screen and (min-width: 250px) and (max-width: 500px){
     body{
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .container2{
         margin-top: 20px;
