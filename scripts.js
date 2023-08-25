@@ -41,28 +41,28 @@ function set_alarm_button(){
     wake_up_time_viewer.innerText=wake_up_id.options[wake_up_id.selectedIndex].text
 
     if(night_id.value == hours){
-        document.getElementById('box3_greeting')="GOOD NIGHT !!"
+        document.getElementById('box3_greeting').innerText="GOOD NIGHT !!"
         document.getElementById('image').src="./good_night.png"
-        document.getElementById('box7_greeting')='CLOSE YOUR EYES AND GO TO SLEEP'
+        document.getElementById('box7_greeting').innerText='CLOSE YOUR EYES AND GO TO SLEEP'
     }
     else if(nap_id.value == hours){
-        document.getElementById('box3_greeting')="GOOD EVENING !!"
+        document.getElementById('box3_greeting').innerText="GOOD EVENING !!"
         document.getElementById('image').src="./good_evening.png"
-        document.getElementById('box7_greeting')='STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!'
+        document.getElementById('box7_greeting').innerText='STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!'
     }
     else if(lunch_id.value ==hours){
-        document.getElementById('box3_greeting')="GOOD AFTERNOON !! TAKE SOME SLEEP"
+        document.getElementById('box3_greeting').innerText="GOOD AFTERNOON TAKE SOME SLEEP"
         document.getElementById('image').src="./lunch_greeting.png"
-        document.getElementById('box7_greeting')="LET'S HAVE SOME LUNCH !!"
+        document.getElementById('box7_greeting').innerText="LET'S HAVE SOME LUNCH !!"
 
     }
 }
 
-let button=document.getElementsByTagName("button")[0]
+var button_new=document.getElementById("set_alarm")
 
-button.addEventListener("mousehover",function(){
+button_new.addEventListener("mouseover",function(){
     this.innerText="Party Time"
 })
-button.addEventListener("mousehout",function(){
-    this.innerText="Party Time"
+button_new.addEventListener("mousehout",function(){
+    this.innerText="Set Alarm"
 })
