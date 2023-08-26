@@ -47,8 +47,8 @@ function set_alarm_button(){
     }
     else if(nap_id.value == hours){
         document.getElementById('box3_greeting').innerText="GOOD EVENING !!"
-        document.getElementById('image').src="./good_evening.png"
-        document.getElementById('box7_greeting').innerText='STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!'
+        document.getElementById('image').src="./nap_greeting.svg"
+        document.getElementById('box7_greeting').innerText='STOP YAWNING, GET SOME TEA.. \n ITS JUST EVENING!'
     }
     else if(lunch_id.value ==hours){
         document.getElementById('box3_greeting').innerText="GOOD AFTERNOON TAKE SOME SLEEP"
@@ -58,8 +58,8 @@ function set_alarm_button(){
     }
     else if(wake_up_id.value ==hours){
         document.getElementById('box3_greeting').innerText="GOOD MORNING!! WAKE UP !! "
-        document.getElementById('image').src="./lunch_greeting.png"
-        document.getElementById('box7_greeting').innerText="LET'S HAVE SOME LUNCH !!"
+        document.getElementById('image').src="./morning_greeting.svg"
+        document.getElementById('box7_greeting').innerText="GRAB SOME HEALTHY BREAKFAST!!! "
     }
 }
 
