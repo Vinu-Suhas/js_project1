@@ -158,7 +158,15 @@ p.dash{
     
   overflow: hidden;
 }
-
+.time_box_display{
+    color: #3D087B; 
+            margin-top: 34px; 
+            margin-left: 50px;  
+            font-size: larger;
+            font-family: 'Manrope', sans-serif ;
+            font-weight: bold;
+            margin-right:50px; 
+}
 
 p.time{
     color: #8A11BF;
@@ -181,6 +189,16 @@ p.time_unit{
         justify-content: center;
         align-content: center;
         align-items: center;
+    }
+
+    .time_box_display{
+        color: #3D087B; 
+                margin-top: 34px; 
+                margin-left: 50px;  
+                font-size: larger;
+                font-family: 'Manrope', sans-serif ;
+                font-weight: bold;
+                margin-right:50px; 
     }
     .container2{
         margin-top: 20px;
@@ -210,7 +228,7 @@ p.time_unit{
         margin-left: 4rem;
     }
     .combined_container button{
-        width:9rem;
+        width:8rem;
     }
     .container2 img{
         width: 23rem;
