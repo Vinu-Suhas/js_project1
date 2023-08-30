@@ -211,6 +211,9 @@ p.time_unit{
     .box1,.box2,.box3,.box4,.box7,.box6{
         width: 23rem;
     }
+    .box2{
+        height: fit-content;
+    }
     .hour_box{
         margin-left: 0px;
     }
