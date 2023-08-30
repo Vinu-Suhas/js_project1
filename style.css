@@ -175,10 +175,53 @@ p.time_unit{
 
  @media screen and (min-width: 250px) and (max-width: 500px){
     body{
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
     .container2{
         margin-top: 20px;
+        margin-left: 0px;
     }
+    p.dash{
+        padding-left: 2rem;
+    }
+
+    .box1,.box2,.box3,.box4,.box7,.box6{
+        width: 23rem;
+    }
+    .hour_box{
+        margin-left: 0px;
+    }
+    .box6 span{
+        margin-left: 0px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .box6_1{
+        width: 20rem;
+        margin-left: 2rem;
+    }
+    .box6_2{
+        width: 16rem;
+        margin-left: 4rem;
+    }
+    .combined_container button{
+        width:9rem;
+    }
+    .container2 img{
+        width: 23rem;
+    }
+    .box7{
+        width: 23rem;
+        box-sizing: border-box;
+        height: fit-content;
+    }
+    .box5{
+        margin-left: 0;
+    }
+
  }
