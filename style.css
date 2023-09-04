@@ -49,6 +49,7 @@ body{
 }
 .box4{
     padding-top: 5px;
+    width: 250px;
     padding-bottom: 5px;
     vertical-align: top;
     margin-bottom: 20px;
@@ -226,12 +227,18 @@ p.time_unit{
         width: 20rem;
         margin-left: 2rem;
     }
+    .box5{
+        display: block;
+        text-align: center;
+        width: auto;
+    }
     .box6_2{
         width: 16rem;
         margin-left: 4rem;
     }
     .combined_container button{
-        width:8rem;
+        /* width:8rem; */
+        display: block;
     }
     .container2 img{
         width: 23rem;
